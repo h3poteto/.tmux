@@ -5,7 +5,7 @@
 ## Linux
 - tmux
 - powerline
-- xclip
+- xsel
 - Meta Key
 
 ### tmux
@@ -36,11 +36,11 @@ Configure:
 ```
 $ git clone git@github.com:h3poteto/powerline-config.git ~/.config/powerline
 ```
-### xclip
+### xsel
 tmuxのバッファとOSのクリップボードを共有するために使う．
 
 ```
-$ sudo apt-get install xclip
+$ sudo apt-get install xsel
 ```
 
 
