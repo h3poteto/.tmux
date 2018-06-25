@@ -5,7 +5,7 @@
 
 ```
 $ git clone git@github.com:h3poteto/.tmux.git
-$ touch .tmux
+$ touch .tmux.conf
 ```
 
 `.tmux.conf` を以下のように編集する．
@@ -19,3 +19,31 @@ source ~/.tmux/tmux.conf
 - powerline
 - reattach-to-user-namespace (for MacOS)
 
+
+## Ubuntu
+### tmux
+Install:
+
+```
+$ sudo add-apt-repository -y ppa:pi-rho/dev
+$ sudo apt-get update
+$ sudo apt-get install tmux-next
+$ sudo ln -s /usr/bin/tmux-next /usr/bin/tmux
+```
+
+### powerline
+
+Install:
+
+```
+$ pip install powerline-status
+```
+
+Configure:
+
+```
+$ git clone git@github.com:h3poteto/powerline-config.git ~/.config/powerline
+```
+
+## MacOS
+TODO
