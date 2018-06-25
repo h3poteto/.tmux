@@ -2,12 +2,12 @@
 個人的なtmuxの設定になります．
 
 # 下準備
-
-- powerline
-- reattach-to-user-namespace (for MacOS)
-
-
 ## Linux
+- tmux
+- powerline
+- xclip
+- Meta Key
+
 ### tmux
 Install:
 
@@ -36,8 +36,15 @@ Configure:
 ```
 $ git clone git@github.com:h3poteto/powerline-config.git ~/.config/powerline
 ```
+### xclip
+tmuxのバッファとOSのクリップボードを共有するために使う．
 
-### Meta
+```
+$ sudo apt-get install xclip
+```
+
+
+### Meta Key
 ペインの移動にMetaキーを使用しているが，通常の日本語キーボードの場合，AltがMetaに対応してしまう．
 これをWinキーでMeta入力できるようにする．
 
@@ -56,6 +63,10 @@ xmodmap $HOME/.Xmodmap
 
 
 ## MacOS
+- tmux
+- powerline
+- reattach-to-user-namespace
+
 ### tmux
 Install:
 
