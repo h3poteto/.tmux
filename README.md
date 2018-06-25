@@ -7,7 +7,7 @@
 - reattach-to-user-namespace (for MacOS)
 
 
-## Ubuntu
+## Linux
 ### tmux
 Install:
 
@@ -37,6 +37,24 @@ Configure:
 $ git clone git@github.com:h3poteto/powerline-config.git ~/.config/powerline
 ```
 
+### Meta
+ペインの移動にMetaキーを使用しているが，通常の日本語キーボードの場合，AltがMetaに対応してしまう．
+これをWinキーでMeta入力できるようにする．
+
+`~/.Xmodamp` を作成し，
+
+```
+keycode <Win Key Code> = Meta_L
+```
+とする．`<Win Key Code>` は `xev` を使って調べることができる．
+
+この設定を `~/.zshrc` で読み込む(X Window全体に効かせる必要はないため)．
+
+```bash
+xmodmap $HOME/.Xmodmap
+```
+
+
 ## MacOS
 ### tmux
 Install:
@@ -65,6 +83,8 @@ $ git clone git@github.com:h3poteto/powerline-config.git ~/.config/powerline
 ```
 
 ### reattach-to-user-namespace
+tmuxのbufferとOSの持つコピー&ペーストバッファを共有するために入れておく．
+
 ```
 brew install reattach-to-user-namespace
 ```
