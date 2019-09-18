@@ -93,6 +93,12 @@ Configure:
 $ git clone git@github.com:h3poteto/powerline-config.git ~/.config/powerline
 ```
 
+システム情報を取得するためpsutilを入れる．
+
+```
+$ pip install psutil
+```
+
 ### reattach-to-user-namespace
 tmuxのbufferとOSの持つコピー&ペーストバッファを共有するために入れておく．
 
